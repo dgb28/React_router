@@ -12,10 +12,10 @@ import User from './components/User/User.jsx'
 const router=createBrowserRouter(
   createRoutesFromElements(
     <Route path="/React_router/" element={<Layout/>}>
-      <Route path="" element={<Home/>}/>
-      <Route path="about" element={<About/>}/>
-      <Route loader={githubInfoLoader} path="github" element={<Github/>}/>
-      <Route path="user/" element={<User/>}>
+      <Route path="/React_router/" element={<Home/>}/>
+      <Route path="/React_router/about" element={<About/>}/>
+      <Route loader={githubInfoLoader} path="/React_router/github" element={<Github/>}/>
+      <Route path="/React_router/user/" element={<User/>}>
         <Route path=":userid" element={<User/>}/>
       </Route>
       <Route path="*" element={<div>Not Found</div>}/>
