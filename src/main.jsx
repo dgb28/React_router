@@ -11,7 +11,7 @@ import User from './components/User/User.jsx'
 
 const router=createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/React_router" element={<Layout/>}>
+    <Route path="/React_router/" element={<Layout/>}>
       <Route path="" element={<Home/>}/>
       <Route path="about" element={<About/>}/>
       <Route loader={githubInfoLoader} path="github" element={<Github/>}/>
